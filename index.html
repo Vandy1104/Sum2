@@ -25,13 +25,13 @@
           <div class="collapse navbar-collapse myPosition bg-light col-sm-12 col-md-6 col-lg-4" id="navbarTogglerDemo02">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                <a id="home" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Vehicles</a>
+                <a id="vehicles" class="nav-link" href="#">Vehicles</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a id="contact" class="nav-link" href="#">Contact</a>
               </li>
               <!-- <li class="nav-item">
                 <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -71,44 +71,51 @@
 
   <!--Vehicle Search box-->
 
-  <div class="myContainer bg-info mt-3 text-white col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+  <div id="search" class="myContainer bg-info mt-3 text-white col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4">
     <h5 class="text-center py-2">Search For your Transport</h5>
     <!-- map test-->
-    <div class="form-group"><div>
-
+      <div class="form-group"><div>
        <label class="float-left" for="exampleFormControlSelect1">From</label>
-       <input id="origin-input" class="form-control controls float-left" type="text"
-           placeholder="Enter an origin location">
+        <input id="origin-input" class="form-control controls float-left" type="text" placeholder="Enter an origin location">
            <div class="clearfix">
            </div>
        <label class="float-left clearfix" for="exampleFormControlSelect1">To</label>
-       <input id="destination-input" class="form-control controls ml-5" type="text"
-           placeholder="Enter a destination location">
+       <input id="destination-input" class="form-control controls ml-5" type="text" placeholder="Enter a destination location">
    </div>
 
    <div id="map"></div> <!--Ends-->
 
     <label for="exampleFormControlSelect1">Number of Days</label>
-    <select class="form-control controls" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
+      <select class="form-control controls nod" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
     <label for="exampleFormControlSelect1">Number of People</label>
-    <select class="form-control controls" id="exampleFormControlSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-    <button type="button" class="btn btn-dark my-3">Search</button>
+      <select class="form-control controls nop" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    <button type="button" class="btn btn-dark my-3 searchBtn">Search</button>
   </div>
-  </div>
+</div>
 
+<!-- Container to show all contents of webapp -->
+<div id="show"></div>
 
+<!-- Modal -->
+
+    <div id="myModal" class="myModal">
+      <div class="closeBar bg-primary text-center">
+        &times;
+      </div>
+      <div id="modalContent"></div>
+    </div>
 
 
 

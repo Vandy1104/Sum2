@@ -54,6 +54,37 @@
   float: none;
 }
 
+// vehicles
+.vCard{
+  width: 9rem;
+  height: 18rem;
+  float: left;
+}
+
+.cardContent{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+}
+
+//modal
+
+.myModal{
+  background: cornsilk;
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+}
+
+.closeBar{
+  font-size: 40px;
+  cursor: pointer;
+}
 
 // Enter Destination autofill
 
