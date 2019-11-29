@@ -2,9 +2,9 @@ console.log('NZ Tourism Transport');
 
 var transport = [
   {
-      type : "Motor-Bike",
-      vehicleName : "BMWF800GT",
-      transmission: "M",
+      type : 'Motor-Bike',
+      vehicleName : 'BMWF800GT',
+      transmission: 'M',
       year: 2018,
       description: "This is a great middle weight sports tourer with a full fairing, high windshield and touring oriented ergonomics with raised handlebars. Comfortable seating postion which is adjustable 3 ways, a punchy motor along with excellent handling and ABS make for a motorcycle that you just want to keep on riding.",
       id   : 0,
@@ -12,32 +12,32 @@ var transport = [
       maxDay: 5,
       minPpl: 1,
       maxPpl: 1,
-      rent   : '$109/day',
+      rent   : 109,
       fuel   : 'Petrol',
       mileage   : "3.7L/100km",
       engineCC   : "800cc",
       photo: "images/bikes/bike1.jpg"
   },
   {
-      type : "Small-Car",
+      type : 'Small-Car',
       vehicleName : "TOYOTA YARIS SX 1.5P/4AT/HA/5DR/5",
-      transmission: "Automatic",
+      transmission: 'Automatic',
       year: 2015,
-      description: "The Yaris sets the bar high in looks, performance safety and features. The Yaris offers more than you would expect. The Yaris boasts a sportier look along with a modern and spacious interior and alloy wheels. Sports flair, family first, the Toyota Yaris Hatch adds an enviable sports flair, whilst safely bringing the kids along for the ride.Yaris Hatch is bursting with funky features and cool technologies. Great looking and with a bubbly personality to match, it’s not only a fun way to get around, but safe and stylish too. Everyone needs a little Yaris in their life. Yaris has proven itself a dependable hatchback that offers so much more.",
+      description: 'The Yaris sets the bar high in looks, performance safety and features. The Yaris offers more than you would expect. The Yaris boasts a sportier look along with a modern and spacious interior and alloy wheels. Sports flair, family first, the Toyota Yaris Hatch adds an enviable sports flair, whilst safely bringing the kids along for the ride.Yaris Hatch is bursting with funky features and cool technologies. Great looking and with a bubbly personality to match, it’s not only a fun way to get around, but safe and stylish too. Everyone needs a little Yaris in their life. Yaris has proven itself a dependable hatchback that offers so much more.',
       features: "New Zealand new, Iso Fixings, 7 Airbags, 15 inch Alloy Wheels, Fog Lights, ABS, Power Steering, Cruise Control, Traction Control, Electronic Stability Control, Automatic Headlights, Parking Sensors, Reversing Camera, Air Conditioning, CD Player, Bluetooth, USB/AUX/MP3 Input, Electric Mirrors, Electric Windows, Multi-Function Steering Wheel, Central Locking",
       id   : 1,
       minDay: 1,
       maxDay: 10,
       minPpl: 1,
       maxPpl: 2,
-      rent   : '$129/day',
+      rent   : 129,
       fuel   : 'Petrol',
       mileage   : "8.5L/100km",
       engineCC   : "1497cc",
       photo: "images/small/small1.jpg"
   },
   {
-      type : "Large-Car",
+      type : 'Large-Car',
       vehicleName : "MAZDA CX8 LIMITED AWD",
       transmission: "Automatic",
       year: 2015,
@@ -48,14 +48,14 @@ var transport = [
       maxDay: 10,
       minPpl: 1,
       maxPpl: 5,
-      rent   : '$144/day',
+      rent   : 144,
       fuel   : 'Diesel',
       mileage   : "9.7L/100km",
       engineCC   : "2191cc",
       photo: "images/large/large1.jpg"
   },
   {
-    type : "Motor-Home",
+    type : 'Motor-Home',
     vehicleName : "FORD TRANSIT 470E JUMBO",
     transmission: "Manual",
     year: 2019,
@@ -66,7 +66,7 @@ var transport = [
     maxDay: 15,
     minPpl: 2,
     maxPpl: 6,
-    rent   : '$200/day',
+    rent   : 200,
     fuel   : 'Diesel',
     mileage   : "17L/100km",
     engineCC   : "1995cc",
@@ -204,7 +204,7 @@ document.getElementById('home').addEventListener('click', function(){
 +       '<input id="destination-input" class="form-control controls ml-5" type="text" placeholder="Enter a destination location">'
 +   '</div>'
 
-+   '<div id="map"></div>' <!--Ends-->
++   '<div id="map"></div>' //Ends
 
 +    '<label for="exampleFormControlSelect1">Number of Days</label>'
 +    '<select class="form-control controls" id="exampleFormControlSelect1">'
@@ -244,6 +244,7 @@ for(var i = 0; i < transport.length; i++) {
   + '<li class="text-primary cardContent list-group-item">' + transport[i].vehicleName + '</li>'
   + '<li class="text-primary cardContent list-group-item" >' + transport[i].type + '</li>'
   + '<li class="text-primary cardContent list-group-item" > ' + transport[i].rent + '</li>'
+  + '<button id= "'+ transport[i].id +  '" type="button" class="btn btn-primary modalClass" data-toggle="modal" data-target="#exampleModalCenter">More</button>'
   +  '</ul>'
   +  '</div>'
   // += '<div class="row ml-4">'
@@ -261,71 +262,47 @@ for(var i = 0; i < transport.length; i++) {
 
 allTransport();
 
-//Modals
-// function myFun() {
-//     for (var i = 0; i < transport.length ; i++){
-//     document.getElementById('show').innerHTML = " "; //to clear the container
-//     $('.myTransport').on('click', function(){
-//     document.getElementById('modalContent').innerHTML
-//     += '<img class="card-thumbnail" src="' + transport[i].photo + '"  alt="transport"/>'
-//     + '<div class="jumbotrons ml-5 text-info">' + transport[i].rent + '</br>'
-//     + transport[i].features + '</br>' + '</div>'
-//   })
-// }};
-
-//Using Jquery to display Modal
- $('.myTransport').on('click', function(){
-   //console.log(transport);
-   console.log(typeof(this.id));
-
-  document.getElementById('show').innerHTML = " ";
-  $('.myModal').show();
-  for (var i = 0; i < transport.length; i++){
-    console.log(transport[i].id);
-    console.log(this.id);
-    //console.log(typeof(fashion[i].id));
-      if (transport[i].id.toString() === this.id) {
-        console.log(transport[i].vehicleName);
-        console.log(transport[i].rent);
-        console.log(transport[i].features);
-     //to clear the container
-      document.getElementById('myModal').innerHTML
-      += '<div class="display-4 bg-dark text-primary text-center">' + transport[i].vehicleName + '</br>'
-      + transport[i].rent + '</br>' + transport[i].features + '</br>' + '</div>'
-      + '<img class="card-thumbnail myTransport" src=" ' + transport[i].photo + ' "  alt="transport"/>'
-    } else{
-      console.log('no');
-    }
-      }
-    });
-
-    $('.closeBar').on('click', function(){
-      console.log('close');
-      $('.myModal').hide();
-    });
-
-//Conditional
 
 //Display search results
-// var nod = 0;
-// var nop = 0;
-// $('.searchBtn').on('click', function(){
-//   console.log('search result');
-function bike(){
-  for(var i = 0; i < transport.length; i++) {
-    var x = document.getElementsByClassName('nod').value;
-    var y = document.getElementsByClassName('nop').value;
-    if (x <= 5 && y >! 1) {
-        return transport[i].type('Motor-Bike');
-          }
-        }
-      };
 
-      $('.searchBtn').on('click', function(){
+// var x = 0;
+// var y = 0;
+// function bike(){
+//   for(var i = 0; i < transport.length; i++) {
+//     x = document.getElementById('nod').value;
+//     y = document.getElementById('nop').value;
+//     console.log(x);
+//     console.log(y);
+//     if (x <= 5 && y == 1) {
+//       console.log('Search');
+//       console.log(transport[i]);
+//         return transport[i].type;
+//
+//           }
+//         }
+//   };
+
+  // Trigger Search Button
+
+    $('.searchBtn').on('click', function(){
+      // var days = spinner.spinner( "value" ) ;
+      //Read the place values
+      // x = parseInt(document.getElementById('nod').value);
+      var days = parseInt(document.getElementById('days').value);
+      if ((days > 15) || (days < 1)){
+        alert('Please Enter between 1 to 15');
+      }
+      var people = parseInt(document.getElementById('nop').value);
+      console.log(days);
+      console.log(people);
+      document.getElementById('show').innerHTML = " ";
      for(var i = 0; i < transport.length; i++) {
      //   console.log('search result');
-     bike();
-      document.getElementById('show').innerHTML = " "; //to clear the container
+     // bike();
+       //to clear the container
+       console.log(i);
+      if ((days >= transport[i].minDay) && (days<= transport[i].maxDay) &&(people >=transport[i].minPpl) && (people <= transport[i].maxPpl)){
+        console.log('true');
       document.getElementById('show').innerHTML
       += '<div class="card vCard myContainer border border-light clearfix py-0 ml-4 center mb-2 col-sm-6 col-md-6 col-lg-4">'
       +  '<img src="' + transport[i].photo + ' " class="card-img-top myTransport" alt="Vehicles"/>'
@@ -333,7 +310,13 @@ function bike(){
       + '<li class="text-primary cardContent list-group-item">' + transport[i].vehicleName + '</li>'
       + '<li class="text-primary cardContent list-group-item" >' + transport[i].type + '</li>'
       + '<li class="text-primary cardContent list-group-item" > ' + transport[i].rent + '</li>'
+      + '<button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass" data-toggle="modal" data-target="#exampleModalCenter">More</button>'
       +  '</ul>'
       +  '</div>'
+      }
     }
+});   // Vehicle Search ends here.
+
+$('.modalClass').on('click', function(){
+  console.log(this.id);
 });

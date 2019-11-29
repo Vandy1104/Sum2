@@ -1,16 +1,16 @@
-@import "bootstrap-4.4.0/scss/functions";
-@import "bootstrap-4.4.0/scss/variables";
-@import "bootstrap-4.4.0/scss/mixins";
+@import "bootstrap-4.4.1/scss/functions";
+@import "bootstrap-4.4.1/scss/variables";
+@import "bootstrap-4.4.1/scss/mixins";
 
 //optional
-@import "bootstrap-4.4.0/scss/utilities";
-@import "bootstrap-4.4.0/scss/reboot";
-@import "bootstrap-4.4.0/scss/grid";
-@import "bootstrap-4.4.0/scss/buttons";
-@import "bootstrap-4.4.0/scss/images";
-@import "bootstrap-4.4.0/scss/jumbotron";
-@import "bootstrap-4.4.0/scss/transitions";
-@import "bootstrap-4.4.0/scss/type";
+@import "bootstrap-4.4.1/scss/utilities";
+@import "bootstrap-4.4.1/scss/reboot";
+@import "bootstrap-4.4.1/scss/grid";
+@import "bootstrap-4.4.1/scss/buttons";
+@import "bootstrap-4.4.1/scss/images";
+@import "bootstrap-4.4.1/scss/jumbotron";
+@import "bootstrap-4.4.1/scss/transitions";
+@import "bootstrap-4.4.1/scss/type";
 
 *{
   margin: 0;
@@ -84,6 +84,11 @@
 .closeBar{
   font-size: 40px;
   cursor: pointer;
+}
+
+// number of days
+.days{
+  width: 75px;
 }
 
 // Enter Destination autofill

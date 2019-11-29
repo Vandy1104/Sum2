@@ -4698,6 +4698,9 @@ mark,
   font-size: 40px;
   cursor: pointer; }
 
+.days {
+  width: 75px; }
+
 #map {
   height: 100%; }
 
