@@ -14,41 +14,30 @@
     <title>NZ Tourism Transport</title>
   </head>
   <body>
-    <div class="myContainer col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <!-- Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <img class="logo" src="images/pure.jpeg" alt="logo">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button class="navbar-toggler myPosition col-xs-12 col-sm-12 col-md-6 col-lg-4" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse myPosition bg-light col-sm-12 col-md-6 col-lg-4" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a id="home" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a id="vehicles" class="nav-link" href="#">Vehicles</a>
-              </li>
-              <li class="nav-item">
-                <a id="contact" class="nav-link" href="#">Contact</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li> -->
-            </ul>
-    <!-- <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> -->
-          </div>
-        </nav>
-    </div>   <!--Logo & Nav end here-->
+    <div class="pos-f-t mb-3">
+<div class="collapse" id="navbarToggleExternalContent">
+  <div class="bg-dark p-4">
+    <!-- <h5 class="text-white h4">Collapsed content</h5> -->
+    <span class="text-muted">
+      <div class="container">
+    <a id="home" class="navbar-brand text-white" href="#">Home</a>
+    <a id="vehicles" class="navbar-brand text-white" href="#">Vehicles</a>
+    <a id="contact" class="navbar-brand text-white" href="#">Contact</a>
+  </div>
+    </span>
+  </div>
+</div>
+<nav class="navbar navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <img class="logo" src="images/logo.jpg" alt="logo">
+</nav>
+</div>   <!--Logo & Nav end here-->
 
     <!-- Carousel -->
-
-    <div id="carouselExampleInterval" class="carousel slide myContainer" data-ride="carousel">
+    <div id="carouselExampleInterval" class="carousel slide myContainer mainCarousel" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-interval="10000">
         <img class="cSize img-fluid" src="images/ban1.jpg" class="d-block w-100" alt="...">
@@ -81,43 +70,15 @@
            <div class="clearfix">
            </div>
        <label class="float-left clearfix" for="exampleFormControlSelect1">To</label>
-       <input id="destination-input" class="form-control controls ml-5" type="text" placeholder="Enter a destination location">
+       <input id="destination-input" class="form-control controls ml-5 mt-2" type="text" placeholder="Enter a destination location">
    </div>
 
-   <div id="map"></div> <!--Ends-->
-   <!-- <input type = "text" id = "spinner" value = "0" /><br><br> -->
+   <div></div> <!--Ends-->
+
+   <!-- User Input for number of days -->
    <label for="spinner">Days</label>
-   <input class="days controls ml-2" type="number" id="days" placeholder="1 to 15" name="days" min="1" max="15">
+   <input class="days controls ml-2 mt-3" type="number" id="days" placeholder="1 to 15" name="days" min="1" max="15">
    <br>
-   <!-- <p>
-  <label for="spinner">Number<br>of Days</label>
-  <span class="ui-spinner ui-corner-all ui-widget ui-widget-content">
-    <input id="spinner" name="value" class="ui-spinner-input" aria-valuenow="6" autocomplete="off" role="spinbutton">
-    <a tabindex="-1" aria-hidden="true" class="ui-button ui-widget ui-spinner-button ui-spinner-up ui-corner-tr ui-button-icon-only" role="button">
-      <span class="ui-button-icon ui-icon ui-icon-triangle-1-n"></span>
-      <span class="ui-button-icon-space"> </span>
-    </a>
-    <a tabindex="-1" aria-hidden="true" class="ui-button ui-widget ui-spinner-button ui-spinner-down ui-corner-br ui-button-icon-only" role="button">
-      <span class="ui-button-icon ui-icon ui-icon-triangle-1-s">
-      </span>
-      <span class="ui-button-icon-space"> </span>
-    </a>
-  </span>
-  <! <input class="py-0 setValue" id="spinner" name="value"> -->
-<!-- </p> -->
-
-
-    <!-- <label for="exampleFormControlSelect1">Number of Days</label>
-      <select class="form-control controls" id="nod">
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-        <option>4</option>
-        <option>5</option>
-        <option>5</option>
-        <option>5</option>
-        <option>5</option>
-      </select> -->
 
     <label for="exampleFormControlSelect1">Number of People</label>
       <select class="form-control controls" id="nop">
@@ -132,55 +93,56 @@
   </div>
 </div>
 
-<!-- Container to show all contents of webapp -->
-<div id="show"></div>
 
 <!-- Modal -->
+<!-- Large modal appears on clicking More button -->
 
-<!-- Button trigger modal -->
-
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-  <div class="modal-content modal-lg">
-    <div class="modal-header">
-      <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <!-- Carousel inside modal -->
-      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/mh/mh1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/large/large1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/mh/mh1.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-      </div> <!--Carousel ends here-->
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Save changes</button>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Our collection&nbsp;(To tatou kohinga)</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div id="modalContent" class="modal-body">
+        <!-- Dynamic display via javascript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id="showMap" type="button" class="btn btn-primary">Show Map</button>
+        <!-- modal inside modal -->
+        <!-- Modal -->
+<!-- <div class="modal fade mapModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div id="map"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
     </div>
   </div>
-</div>
-</div>
+</div> -->
 
+      </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Container to show all contents of webapp -->
+<div id="show"></div>
+<div id="map"></div>
+<button id="calculate" type="button" name="button"></button>
 
 
     <!-- Optional JavaScript -->

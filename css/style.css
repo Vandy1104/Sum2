@@ -4655,17 +4655,16 @@ mark,
   margin: auto; }
 
 .logo {
-  width: 8rem;
-  height: 2rem; }
-
-.myPosition {
-  margin-left: 40%;
-  margin-top: 0; }
+  width: 4rem;
+  height: 4rem; }
 
 .myContainer {
-  width: 80%;
+  width: 90%;
   display: block;
   margin: auto; }
+
+.cont {
+  width: 100%; }
 
 .cSize {
   height: 400px;
@@ -4675,8 +4674,8 @@ mark,
   float: none; }
 
 .vCard {
-  width: 9rem;
-  height: 18rem;
+  width: 200px;
+  height: 300px;
   float: left; }
 
 .cardContent {
@@ -4701,15 +4700,7 @@ mark,
 .days {
   width: 75px; }
 
-#map {
-  height: 100%; }
-
-/* Optional: Makes the sample page fill the window. */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
-
+#map
 .controls {
   margin-top: 5px;
   border: 1px solid transparent;

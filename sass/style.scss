@@ -20,7 +20,7 @@
 
 
 
-//Unuversal classes
+//Universal classes
 
 .center{
   display: block;
@@ -28,21 +28,25 @@
 }
 
 .logo{
-  width: 8rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
 }
 
-.myPosition{
-  margin-left: 40%;
-  margin-top: 0;
-}
+// .myPosition{
+//   margin-left: 40%;
+//   margin-top: 0;
+// }
 
 // Carousel
 
 .myContainer{
-  width: 80%;
+  width: 90%;
   display: block;
   margin: auto;
+}
+
+.cont{
+  width: 100%;
 }
 
 .cSize{
@@ -56,8 +60,8 @@
 
 // vehicles
 .vCard{
-  width: 9rem;
-  height: 18rem;
+  width: 200px;
+  height: 300px;
   float: left;
 }
 
@@ -65,8 +69,8 @@
   width: 100%;
   padding: 0;
   margin: 0;
-
 }
+
 
 //modal
 
@@ -93,15 +97,15 @@
 
 // Enter Destination autofill
 
-#map {
-        height: 100%;
-      }
+ #map
+//         height: 500px;
+//       }
       /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+      // html, body {
+      //   height: 100%;
+      //   margin: 0;
+      //   padding: 0;
+      // }
       .controls {
         margin-top: 5px;
         border: 1px solid transparent;
