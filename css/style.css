@@ -4683,16 +4683,6 @@ mark,
   padding: 0;
   margin: 0; }
 
-.myModal {
-  background: cornsilk;
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 5; }
-
 .closeBar {
   font-size: 40px;
   cursor: pointer; }
@@ -4700,14 +4690,27 @@ mark,
 .days {
   width: 75px; }
 
-#map
+/* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+#map {
+  width: 90%;
+  height: 400px;
+  display: block;
+  margin: auto; }
+
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
 .controls {
-  margin-top: 5px;
+  margin-top: 10px;
   border: 1px solid transparent;
   border-radius: 2px 0 0 2px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  height: 30px;
+  height: 32px;
   outline: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); }
 

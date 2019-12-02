@@ -36,6 +36,8 @@
 </nav>
 </div>   <!--Logo & Nav end here-->
 
+
+
     <!-- Carousel -->
     <div id="carouselExampleInterval" class="carousel slide myContainer mainCarousel" data-ride="carousel">
     <div class="carousel-inner">
@@ -61,27 +63,45 @@
 
   <!--Vehicle Search box-->
 
-  <div id="search" class="myContainer bg-info mt-3 text-white col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <h5 class="text-center py-2">Search For your Transport</h5>
+
+  <!-- <div id="search" class="myContainer bg-info mt-3 text-white col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4">
+    <h5 class="text-center py-2">Search For your Transport</h5>-->
     <!-- map test-->
-      <div class="form-group"><div>
-       <label class="float-left" for="exampleFormControlSelect1">From</label>
+      <!-- <div class="form-group"><div>
+       <label for="origin-input" class="form-control controls float-left" >From</label>
         <input id="origin-input" class="form-control controls float-left" type="text" placeholder="Enter an origin location">
            <div class="clearfix">
            </div>
-       <label class="float-left clearfix" for="exampleFormControlSelect1">To</label>
+       <label class="form-control controls float-left clearfix" for="destination-input">To</label>
        <input id="destination-input" class="form-control controls ml-5 mt-2" type="text" placeholder="Enter a destination location">
    </div>
 
-   <div></div> <!--Ends-->
+   <div></div> -->
+   <!-- Ends  -->
+   <div class="my-5">
+          <!-- <label for="origin-input" class="controls float-left" >From</label> -->
+           <input id="origin-input" class="controls" type="text"
+               placeholder="Enter an origin location">
+
+          <!-- <label class="controls float-left clearfix" for="destination-input">To</label> -->
+           <input id="destination-input" class="controls" type="text"
+               placeholder="Enter a destination location">
+
+
+       </div>
+
+       <div id="map"></div>
+
 
    <!-- User Input for number of days -->
-   <label for="spinner">Days</label>
+   <div class="myContainer bg-dark text-white mt-3">
+
+   <label class="ml-4 mt-5" for="days">Days</label>
    <input class="days controls ml-2 mt-3" type="number" id="days" placeholder="1 to 15" name="days" min="1" max="15">
    <br>
 
-    <label for="exampleFormControlSelect1">Number of People</label>
-      <select class="form-control controls" id="nop">
+    <label class="ml-4 mt-5" for="nop">Number of People</label>
+      <select class="form-control w-50 ml-4" id="nop">
         <option>1</option>
         <option>2</option>
         <option>3</option>
@@ -89,7 +109,10 @@
         <option>5</option>
         <option>6</option>
       </select>
-    <button type="button" class="btn btn-dark my-3 searchBtn">Search</button>
+
+
+      <button type="button" class="btn btn-warning my-3 ml-4 searchBtn">Search</button>
+    </div>
   </div>
 </div>
 
@@ -97,7 +120,7 @@
 <!-- Modal -->
 <!-- Large modal appears on clicking More button -->
 
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg test" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -107,42 +130,26 @@
         </button>
       </div>
       <div id="modalContent" class="modal-body">
+
         <!-- Dynamic display via javascript -->
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button id="showMap" type="button" class="btn btn-primary">Show Map</button>
-        <!-- modal inside modal -->
-        <!-- Modal -->
-<!-- <div class="modal fade mapModal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div id="map"></div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 
       </div>
       </div>
     </div>
   </div>
 
-<!-- Container to show all contents of webapp -->
+
+
+<!--Container to show all contents of webapp -->
 <div id="show"></div>
-<div id="map"></div>
-<button id="calculate" type="button" name="button"></button>
+
+<!--<button id="calculate" type="button" name="button"></button> -->
 
 
     <!-- Optional JavaScript -->
