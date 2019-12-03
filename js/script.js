@@ -2,84 +2,88 @@ console.log('NZ Tourism Transport');
 
 var transport = [
   {
-      id   : 0,
-      type : 'Motor-Bike',
+      id          : 0,
+      type        : 'Motor-Bike',
       vehicleName : 'BMWF800GT',
       transmission: 'M',
-      year: 2018,
-      description: "This is a great middle weight sports tourer with a full fairing, high windshield and touring oriented ergonomics with raised handlebars. Comfortable seating postion which is adjustable 3 ways, a punchy motor along with excellent handling and ABS make for a motorcycle that you just want to keep on riding.",
+      year        : 2018,
+      description : "This is a great middle weight sports tourer with a full fairing, high windshield and touring oriented ergonomics with raised handlebars. Comfortable seating postion which is adjustable 3 ways, a punchy motor along with excellent handling and ABS make for a motorcycle that you just want to keep on riding.",
       features: "All our bikes are prepped and checked over by our Technicians and are backed by our exclusive POWERTRAIN WARRANTY so you'll have no worries getting out on the road.",
-      minDay: 1,
-      maxDay: 5,
-      minPpl: 1,
-      maxPpl: 1,
-      rent   : 109,
-      rating : 'images/star.png',
-      fuel   : 'Petrol',
-      mileage   : "3.7L/100km",
-      test    : 3.7,
-      engineCC   : "800cc",
+      minDay      : 1,
+      maxDay      : 5,
+      minPpl      : 1,
+      maxPpl      : 1,
+      rent        : 109,
+      rating      : 'images/star.png',
+      fuel        : 'Petrol',
+      fuelPrice   : 2.30,
+      mileage     : "3.7L/100km",
+      mPer100KM   : 3.7,
+      engineCC    : "800cc",
       photo: "images/bikes/bike1.jpg"
   },
   {
-      id   : 1,
-      type : 'Small-Car',
-      vehicleName : "TOYOTA YARIS SX 1.5P/4AT/HA/5DR/5",
-      transmission: 'Automatic',
-      year: 2015,
-      description: 'The Yaris sets the bar high in looks, performance safety and features. The Yaris offers more than you would expect. The Yaris boasts a sportier look along with a modern and spacious interior and alloy wheels. Sports flair, family first.',
-      features: "New Zealand new, 7 Airbags, 15 inch Alloy Wheels, Fog Lights,Cruise Control, Traction Control, Electronic Stability Control,Parking Sensors, Reversing Camera, Air Conditioning, CD Player, Bluetooth, USB/AUX/MP3 Input,Central Locking.",
-      minDay: 1,
-      maxDay: 10,
-      minPpl: 1,
-      maxPpl: 2,
-      rent   : 129,
-      rating : "images/star.png",
-      fuel   : 'Petrol',
-      mileage : "8.5L/100km",
-      test    : 8.5,
-      engineCC   : "1497cc",
-      photo: "images/small/small1.jpg"
+      id            : 1,
+      type          : 'Small-Car',
+      vehicleName   : "TOYOTA YARIS SX 1.5P/4AT/HA/5DR/5",
+      transmission  : 'Automatic',
+      year          : 2015,
+      description   : 'The Yaris sets the bar high in looks, performance safety and features. The Yaris offers more than you would expect. The Yaris boasts a sportier look along with a modern and spacious interior and alloy wheels. Sports flair, family first.',
+      features      : "New Zealand new, 7 Airbags, 15 inch Alloy Wheels, Fog Lights,Cruise Control, Traction Control, Electronic Stability Control,Parking Sensors, Reversing Camera, Air Conditioning, CD Player, Bluetooth, USB/AUX/MP3 Input,Central Locking.",
+      minDay        : 1,
+      maxDay        : 10,
+      minPpl        : 1,
+      maxPpl        : 2,
+      rent          : 129,
+      rating        : "images/star.png",
+      fuel          : 'Petrol',
+      fuelPrice     : 2.30,
+      mileage       : "8.5L/100km",
+      mPer100KM     : 8.5,
+      engineCC      : "1497cc",
+      photo         : "images/small/small1.jpg"
   },
   {
-      id   : 2,
-      type : 'Large-Car',
-      vehicleName : "MAZDA CX8 LIMITED AWD",
-      transmission: "Automatic",
-      year: 2015,
-      description: "Mazda’s stunning KODO Design language is at the heart of every Mazda SUV. First-Ever Mazda CX-8 Diesel is the latest example, offering the spacious versatility of a large SUV but with smaller dimensions that don’t compromise on interior space or cabin comfort.",
-      features: "7 seats, Air conditioning Automatic, 3-zone Climate Control with Rear Vents, Bluetooth® handsfree phone connectivity, MZD Connect Infotainment System, Cabin Air Filter Ventilation pollen filter, Cruise Control, Seat adjustment - front Manual 6-way (Driver), Manual 6-way (Passenger), Steering column - adjustable, Apple Carplay™ and Android Auto™ Optional Accessory, Auxiliary input 3.5mm MP3 player compatible, 4 x USB input, iPod® connectivity, Bluetooth® audio.",
-      minDay: 3,
-      maxDay: 10,
-      minPpl: 1,
-      maxPpl: 5,
-      rent   : 144,
-      rating : "images/star.png",
-      fuel   : 'Diesel',
-      mileage   : "9.7L/100km",
-      test    : 9.7,
-      engineCC   : "2191cc",
-      photo: "images/large/large1.jpg"
+      id            : 2,
+      type          : 'Large-Car',
+      vehicleName   : "MAZDA CX8 LIMITED AWD",
+      transmission  : "Automatic",
+      year          : 2015,
+      description   : "Mazda’s stunning KODO Design language is at the heart of every Mazda SUV. First-Ever Mazda CX-8 Diesel is the latest example, offering the spacious versatility of a large SUV but with smaller dimensions that don’t compromise on interior space or cabin comfort.",
+      features      : "7 seats, Air conditioning Automatic, 3-zone Climate Control with Rear Vents, Bluetooth® handsfree phone connectivity, MZD Connect Infotainment System, Cabin Air Filter Ventilation pollen filter, Cruise Control, Seat adjustment - front Manual 6-way (Driver), Manual 6-way (Passenger), Steering column - adjustable, Apple Carplay™ and Android Auto™ Optional Accessory, Auxiliary input 3.5mm MP3 player compatible, 4 x USB input, iPod® connectivity, Bluetooth® audio.",
+      minDay        : 3,
+      maxDay        : 10,
+      minPpl        : 1,
+      maxPpl        : 5,
+      rent          : 144,
+      rating        : "images/star.png",
+      fuel          : 'Diesel',
+      fuelPrice     : 1.73,
+      mileage       : "9.7L/100km",
+      mPer100KM     : 9.7,
+      engineCC      : "2191cc",
+      photo         : "images/large/large1.jpg"
   },
   {
-    id   : 3,
-    type : 'Motor-Home',
-    vehicleName : "FORD TRANSIT 470E JUMBO",
-    transmission: "Manual",
-    year: 2019,
-    description: "Ford Transit Commercial Vehicles are known for their reliability, loadspace, comfort and efficiency. With a next generation diesel engine available with 6-speed automatic transmission.Tested for Toughness. Ford ran vehicles at maximum speed for two months. Took them from -40°C to towing fully-laden trailers in 50°C heat.",
-    features: "16-inch steel wheels, Roll over mitigation, Torque Vectoring Control, Drive away locking, Power assisted steerting,Drivers armrest, Tachomater, Trip computer, Compartment lamps, 3.5-inch Multi-functional display screen.",
-    minDay: 2,
-    maxDay: 15,
-    minPpl: 2,
-    maxPpl: 6,
-    rent   : 200,
-    rating : "images/star.png",
-    fuel   : 'Diesel',
-    mileage   : "17L/100km",
-    test    : 17,
-    engineCC   : "1995cc",
-    photo: "images/mh/mh1.jpg"
+    id              : 3,
+    type            : 'Motor-Home',
+    vehicleName     : "FORD TRANSIT 470E JUMBO",
+    transmission    : "Manual",
+    year            : 2019,
+    description     : "Ford Transit Commercial Vehicles are known for their reliability, loadspace, comfort and efficiency. With a next generation diesel engine available with 6-speed automatic transmission.Tested for Toughness. Ford ran vehicles at maximum speed for two months. Took them from -40°C to towing fully-laden trailers in 50°C heat.",
+    features        : "16-inch steel wheels, Roll over mitigation, Torque Vectoring Control, Drive away locking, Power assisted steerting,Drivers armrest, Tachomater, Trip computer, Compartment lamps, 3.5-inch Multi-functional display screen.",
+    minDay          : 2,
+    maxDay          : 15,
+    minPpl          : 2,
+    maxPpl          : 6,
+    rent            : 200,
+    rating          : "images/star.png",
+    fuel            : 'Diesel',
+    fuelPrice       : 1.73,
+    mileage         : "17L/100km",
+    mPer100KM       : 17,
+    engineCC        : "1995cc",
+    photo           : "images/mh/mh1.jpg"
   },
 ];
 
@@ -184,6 +188,8 @@ AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(
   });
 };
 
+var distance;
+
 AutocompleteDirectionsHandler.prototype.route = function() {
   if (!this.originPlaceId || !this.destinationPlaceId) {
     return;
@@ -268,8 +274,8 @@ for(var i = 0; i < transport.length; i++) {
   + '<li class="text-primary cardContent list-group-item">' + transport[i].vehicleName + '</li>'
   + '<li class="text-primary cardContent list-group-item" >' + transport[i].type + '</li>'
   + '<li class="text-primary cardContent list-group-item" > Rent: $ ' + transport[i].rent + ' per day </li>'
-  + '<img src="' + transport[i].rating + ' " class="card-img-top" alt="Vehicles"/>'
-  + '<br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass" data-toggle="modal" data-target=".bd-example-modal-lg">More</button>'
+  + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
+  + '<br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
   +  '</ul>'
   +  '</div>'
 //
@@ -288,8 +294,11 @@ for(var i = 0; i < transport.length; i++) {
 
 allTransport();
 // initMap();
-modals();
+modals1();
 //modals
+
+
+
 function modals(){
 $('.modalClass').on('click', function(){
   $('.myModal').show();
@@ -301,16 +310,22 @@ $('.modalClass').on('click', function(){
   document.getElementById('modalContent').innerHTML = " ";
 
   // distance = 675;
- distance = parseInt(distance.substring(0,3));
- console.log
+
+  // distance = parseInt(distance.substring(0,3));
+  distance = parseInt(distance);
+
   // var res = str.substring(0, 2);
   console.log(distance);
 
   for(var i = 0; i < transport.length; i++) {
   if (parseInt(this.id) === parseInt(transport[i].id)) {
-
-    var cost = distance/100 * transport[i].rent*2.66;
-    console.log(cost);
+    console.log(transport[i].fuelPrice);
+    var fuelCost = (distance/100 * transport[i].mPer100KM * transport[i].fuelPrice);
+    var totalRent = days * transport[i].rent;
+    console.log(totalRent);
+    console.log(fuelCost);
+    var totalCost = (fuelCost + totalRent).toFixed(2);
+    console.log(totalCost);
 
     console.log('ID matched');
     document.getElementById('modalContent').innerHTML +=
@@ -338,12 +353,96 @@ $('.modalClass').on('click', function(){
     + '<h6 class="w-100"><b> Mileage: </b>' + transport[i].mileage + '</h6>'
     + '<h6 class="w-100"><b> Engine Capacity: </b>' + transport[i].engineCC + '</h6>'
     + '<h6 class="w-100"><b> Transmission: </b>' + transport[i].transmission + '</h6>'
-    + '<h6 class="w-100"><b> Cost: $ </b>' + cost + '</h6>'
-    + '<h6 class="w-100"><b> Distance: </b>' + distance + 'KM</h6>'
+    + '<h6 class="w-100"><b> The total Distance you are travelling is: </b>' + distance + 'KM</h6>'
+    + '<h6 class="w-100"><b> Fuel Cost: $ </b>' + fuelCost + '</h6>'
+    + '<h6 class="w-100"><b> Total hiring rent for vehicle: $ </b>' + totalRent + ' for ' + days + ' days.</h6>'
+    + '<h6 class="w-100"><b> Yours Total Cost will be: $ </b>' + totalCost + '</h6>'
+
 
     + '<br><h6 class="w-100 text-justify"><b> Description: </b>' + transport[i].description + '</h6>'
     + '<br><h6 class="w-100 text-justify"><b> Features: </b>' + transport[i].features + '</h6>'
-    + '<div class="map"></div>'
+    + '<br><div class="modal-footer"><button type="button" onClick="bookAlert()" class="btn btn-danger book">Book Now</button>'
+    + '<button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button></div>'
+    + '</div>'
+    + '</div>'
+    }
+  }
+  //initMap()
+});
+}
+
+//Book Now button effect using jquery UI.
+
+$( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).click( function( event ) {
+      event.preventDefault();
+    } );
+  } );      // Book now button effect ends here.
+
+
+  //Book now button sweetalert.
+    function bookAlert(){
+    $('.book').on('click', function(){
+    //console.log('there you go');
+    Swal.fire({
+    title: 'Congrats!',
+    text: 'You have been booked. Yours booking reference: NZTransport1548',
+    imageUrl: 'images/logo.jpg',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image'
+  });
+  });
+}
+
+
+//Home page Modal run by default.
+
+function modals1(){
+$('.modalClass1').on('click', function(){
+  $('.myModal').show();
+  //console.log(this.id);
+  //console.log(typeof(this.id));
+
+  document.getElementById('modalContent').innerHTML = " ";
+
+
+
+  for(var i = 0; i < transport.length; i++) {
+  if (parseInt(this.id) === parseInt(transport[i].id)) {
+
+    console.log('ID matched');
+    document.getElementById('modalContent').innerHTML +=
+      '<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">'
+    +  '<div class="carousel-inner">'
+    +  '<div class="carousel-item active">'
+    +  '<img src=" ' + transport[i].photo + ' " class="d-block w-50 center" alt="..."></div><div class="carousel-item">'
+    +  '<img src=" ' + transport[i].photo + ' " class="d-block w-50 center" alt="..."></div>'
+    +  '<div class="carousel-item"><img src=" ' + transport[i].photo + ' " class="d-block w-50 center" alt="..."></div></div>'
+    +  '<a class="carousel-control-prev bg-primary" href="#carouselExampleControls" role="button" data-slide="prev">'
+    +  '<span class="carousel-control-prev-icon" aria-hidden="true"></span>'
+    +  '<span class="sr-only">Previous</span>'
+    +  '</a><a class="carousel-control-next bg-primary" href="#carouselExampleControls" role="button" data-slide="next">'
+    +  '<span class="carousel-control-next-icon" aria-hidden="true"></span>'
+    +  '<span class="sr-only">Next</span></a></div>'
+    +  '<div class="card myContainer border border-light clearfix py-0 ml-4 center mb-2 col-sm-6 col-md-6 col-lg-4">'
+    // +  '<img src="' + transport[i].photo + ' " class="card-img-top myTransport" alt="Vehicles"/>'
+    +  '</div>'
+    +  '<div class="card-body py-1 px-1 list-group list-group-flush">'
+    + '<br><h5 class="w-100 text-center"> Name: ' + transport[i].vehicleName + '</h5>'
+    + '<h6 class="w-100 text-center">Type: ' + transport[i].type + '</h6>'
+    + '<h6 class="w-100 text-center">$ ' + transport[i].rent + ' per day </h6>'
+    + '<div class="mx-5">'
+    + '<h6 class="w-100"><b> Fuel: </b>' + transport[i].fuel + '</h6>'
+    + '<h6 class="w-100"><b> Mileage: </b>' + transport[i].mileage + '</h6>'
+    + '<h6 class="w-100"><b> Engine Capacity: </b>' + transport[i].engineCC + '</h6>'
+    + '<h6 class="w-100"><b> Transmission: </b>' + transport[i].transmission + '</h6>'
+
+
+    + '<br><h6 class="w-100 text-justify"><b> Description: </b>' + transport[i].description + '</h6>'
+    + '<br><h6 class="w-100 text-justify"><b> Features: </b>' + transport[i].features + '</h6>'
+    + '<div class="modal-footer"><button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button></div>'
     + '</div>'
     + '</div>'
     }
@@ -353,17 +452,29 @@ $('.modalClass').on('click', function(){
 }
 
 
-
 //
 //vehicles
 document.getElementById('vehicles').addEventListener('click', function(){
   document.getElementById('show').innerHTML = " "; //to clear the container
-  $('#search').hide();
+  $('.wizard').hide();
+  $('.map').hide();
   $('.mainCarousel').hide();
+    document.getElementById('show').innerHTML
+      = '<div class="dropdown myContainer col-sm-6 col-md-6 col-lg-4">'
+      +  '<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">'
+      +  'Select Vehicle</button>'
+      + '<div class="dropdown-menu dropdown-menu-right">'
+      +  '<button class="dropdown-item motorBike" type="button">MotorBike</button>'
+      +  '<button class="dropdown-item smallCar" type="button">Small car</button>'
+      +  '<button class="dropdown-item large" type="button">Large car</button>'
+      +  '<button class="dropdown-item motorHome" type="button">Motor Home</button>'
+      +  '</div>'
+      +  '</div>'
   for(var i = 0; i < transport.length; i++) {
     document.getElementById('show').innerHTML
-      += '<br><div class="row ml-4 container jumbotron w-50 mx-auto">'
-      +'<div class="col">'
+
+      +=  '<br><div class="row ml-4 container jumbotron w-75 mx-auto col-12 col-sm-12 col-md-12 col-lg-12">'
+      +  '<div class="col">'
       +  '<img src="' + transport[i].photo + ' " class="card-img-top myTransport w-75 mt-4" alt="Vehicles"/>'
       + '</div>'
       + '<div class="col">'
@@ -375,23 +486,67 @@ document.getElementById('vehicles').addEventListener('click', function(){
       + '<h5 class="">Fuel: ' + transport[i].fuel + ' per day</h5>'
       + '<h5 class="">Mileage: ' + transport[i].mileage + ' per day</h5>'
       + '<h5 class="">Engine Capacity: ' + transport[i].engineCC + ' per day</h5>'
-      + '<br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass" data-toggle="modal" data-target=".bd-example-modal-lg">More</button>'
+      + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
+      + '<br><br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
       + '</div>'
       + '</div>';
-  }
-  modals();
-});
+        }
+        modals1();
+      });
+
+      //Dropdown functionality
+      $('.motorBike').on('click', function(){
+        document.getElementById('show').innerHTML = " "; //to clear the container
+        for(var i = 0; i < transport.length; i++) {
+        if (transport[i].type === "Motor-Bike"){
+
+        document.getElementById('show').innerHTML
+        += '<div class="vCard py-2 mt-3 mx-1 ml-5 myContainer clearfix col-sm-6 col-md-6 col-lg-4">'
+
+        +  '<img src="' + transport[i].photo + ' " class="card-img-top" alt="Vehicles"/>'
+        +  '<ul class="py-0 px-0 list-group list-group-flush">'
+        + '<li class="text-primary cardContent list-group-item">' + transport[i].vehicleName + '</li>'
+        + '<li class="text-primary cardContent list-group-item" >' + transport[i].type + '</li>'
+        + '<li class="text-primary cardContent list-group-item" > Rent: $ ' + transport[i].rent + ' per day </li>'
+        + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
+        + '<br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
+        +  '</ul>'
+        +  '</div>'
+          }
+        }
+      });
 
   // Trigger Search Button
-    var days, people;
+    var days, people, originInput, destinationInput;
     $('.searchBtn').on('click', function(){
+    // swal("Good job!", "Here's yours search results!", "success");
       // var days = spinner.spinner( "value" ) ;
       //Read the place values
       // x = parseInt(document.getElementById('nod').value);
+
+      var originInput = document.getElementById('origin-input').value;
+      var destinationInput = document.getElementById('destination-input').value;
+
+      //alert for entering both start and end location
+      if ((originInput === "") || (destinationInput === "")){
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please Enter Start & End Location!',
+          // footer: '<a href>Why do I have this issue?</a>'
+        })
+      }  // alert ends here.
+
       days = parseInt(document.getElementById('days').value);
       if ((days > 15) || (days < 1)){
-        alert('Please Enter between 1 to 15');
+          Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please Enter days between 1 to 15!',
+          // footer: '<a href>Why do I have this issue?</a>'
+        })
       }
+
        people = parseInt(document.getElementById('nop').value);
       console.log(days);
       console.log(people);
@@ -409,7 +564,7 @@ document.getElementById('vehicles').addEventListener('click', function(){
       +  '<ul class="card-body py-1 px-1 list-group list-group-flush">'
       + '<li class="text-primary cardContent list-group-item">' + transport[i].vehicleName + '</li>'
       + '<li class="text-primary cardContent list-group-item" >' + transport[i].type + '</li>'
-      + '<li class="text-primary cardContent list-group-item" > ' + transport[i].rent + '</li>'
+      + '<li class="text-primary cardContent list-group-item" > ' + transport[i].rent + ' per day</li>'
       + '<button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass" data-toggle="modal" data-target=".bd-example-modal-lg">More</button>'
       +  '</ul>'
       +  '</div>'

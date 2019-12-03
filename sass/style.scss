@@ -73,6 +73,11 @@ body{
   margin: 0;
 }
 
+// small stars
+.smaller{
+  width: 100px;
+  height: 30px;
+}
 
 //modal
 
@@ -96,6 +101,11 @@ body{
 .days{
   width: 75px;
 }
+
+.book{
+  cursor: pointer;
+}
+
 
 // Enter Destination autofill
 

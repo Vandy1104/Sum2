@@ -61,23 +61,7 @@
     </a>
   </div>   <!--Carousel ends here-->
 
-  <!--Vehicle Search box-->
 
-
-  <!-- <div id="search" class="myContainer bg-info mt-3 text-white col-12 col-xs-12 col-sm-12 col-md-6 col-lg-4">
-    <h5 class="text-center py-2">Search For your Transport</h5>-->
-    <!-- map test-->
-      <!-- <div class="form-group"><div>
-       <label for="origin-input" class="form-control controls float-left" >From</label>
-        <input id="origin-input" class="form-control controls float-left" type="text" placeholder="Enter an origin location">
-           <div class="clearfix">
-           </div>
-       <label class="form-control controls float-left clearfix" for="destination-input">To</label>
-       <input id="destination-input" class="form-control controls ml-5 mt-2" type="text" placeholder="Enter a destination location">
-   </div>
-
-   <div></div> -->
-   <!-- Ends  -->
    <div class="my-5">
           <!-- <label for="origin-input" class="controls float-left" >From</label> -->
            <input id="origin-input" class="controls" type="text"
@@ -90,11 +74,11 @@
 
        </div>
 
-       <div id="map"></div>
+       <div class="map" id="map"></div>
 
 
    <!-- User Input for number of days -->
-   <div class="myContainer bg-dark text-white mt-3">
+   <div class="myContainer bg-dark text-white mt-3 wizard">
 
    <label class="ml-4 mt-5" for="days">Days</label>
    <input class="days controls ml-2 mt-3" type="number" id="days" placeholder="1 to 15" name="days" min="1" max="15">
@@ -120,7 +104,7 @@
 <!-- Modal -->
 <!-- Large modal appears on clicking More button -->
 
-<div class="modal fade bd-example-modal-lg test" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -136,8 +120,8 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button id="showMap" type="button" class="btn btn-primary">Show Map</button>
+        <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button> -->
+        <!-- <button id="showMap" type="button" class="btn btn-primary">Show Map</button> -->
 
       </div>
       </div>
@@ -155,6 +139,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

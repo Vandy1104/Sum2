@@ -4683,12 +4683,19 @@ mark,
   padding: 0;
   margin: 0; }
 
+.smaller {
+  width: 100px;
+  height: 30px; }
+
 .closeBar {
   font-size: 40px;
   cursor: pointer; }
 
 .days {
   width: 75px; }
+
+.book {
+  cursor: pointer; }
 
 /* Always set the map height explicitly to define the size of the div
       * element that contains the map. */
