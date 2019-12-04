@@ -22,6 +22,7 @@ body{
   // background: black;
 }
 
+
 //Universal classes
 
 .center{
@@ -34,10 +35,6 @@ body{
   height: 4rem;
 }
 
-// .myPosition{
-//   margin-left: 40%;
-//   margin-top: 0;
-// }
 
 // Carousel
 
@@ -52,7 +49,7 @@ body{
 }
 
 .cSize{
-  height: 400px;
+  height: 500px;
   width: 100%;
 }
 
@@ -60,10 +57,10 @@ body{
   float: none;
 }
 
-// vehicles
+// vehicles card
 .vCard{
   width: 200px;
-  height: 300px;
+  height: 500px;
   float: left;
 }
 
@@ -79,6 +76,49 @@ body{
   height: 30px;
 }
 
+//icons below vehicle image.
+.icons{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+//footer
+
+.footerImage{
+    width: 100%;
+    height: 10em;
+    display: block;
+    margin: auto;
+}
+
+.cardClass{
+  // margin-top: 200px;
+  padding-top: 50px;
+  width: 100%;
+  height: 48em;
+}
+
+.cardText{
+  width: 15em;
+}
+
+.logoImg{
+  width: 3.5em;
+  height: 2em;
+}
+
+.instaLogo{
+  width: 2em;
+  height: 2em;
+}
+
+#show{
+  margin-bottom: 50em;
+}
+
+#footer{
+  margin-top: 50em;
+}
 //modal
 
 // .myModal{
@@ -99,9 +139,10 @@ body{
 
 // number of days
 .days{
-  width: 75px;
+  width: 85px;
 }
 
+//Book Now Button.
 .book{
   cursor: pointer;
 }

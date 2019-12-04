@@ -4667,7 +4667,7 @@ mark,
   width: 100%; }
 
 .cSize {
-  height: 400px;
+  height: 500px;
   width: 100%; }
 
 .clearfix::after {
@@ -4675,7 +4675,7 @@ mark,
 
 .vCard {
   width: 200px;
-  height: 300px;
+  height: 500px;
   float: left; }
 
 .cardContent {
@@ -4687,12 +4687,44 @@ mark,
   width: 100px;
   height: 30px; }
 
+.icons {
+  width: 1.5em;
+  height: 1.5em; }
+
+.footerImage {
+  width: 100%;
+  height: 10em;
+  display: block;
+  margin: auto; }
+
+.cardClass {
+  padding-top: 50px;
+  width: 100%;
+  height: 48em; }
+
+.cardText {
+  width: 15em; }
+
+.logoImg {
+  width: 3.5em;
+  height: 2em; }
+
+.instaLogo {
+  width: 2em;
+  height: 2em; }
+
+#show {
+  margin-bottom: 50em; }
+
+#footer {
+  margin-top: 50em; }
+
 .closeBar {
   font-size: 40px;
   cursor: pointer; }
 
 .days {
-  width: 75px; }
+  width: 85px; }
 
 .book {
   cursor: pointer; }
