@@ -4650,6 +4650,9 @@ mark,
   padding: 0;
   box-sizing: border-box; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 .center {
   display: block;
   margin: auto; }
@@ -4703,7 +4706,7 @@ mark,
   height: 48em; }
 
 .cardText {
-  width: 15em; }
+  width: 25em; }
 
 .logoImg {
   width: 3.5em;

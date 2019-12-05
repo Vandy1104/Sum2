@@ -713,17 +713,7 @@ function allTransport(){
   + '<br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
   +  '</ul>'
   +  '</div>'
-//
-//   // += '<div class="row ml-4">'
-//   // +'<div class="col">'
-//   // + '<img class="img-thumbnail mt-3" src="' + transport[i].photo + ' "  alt="Vehicles"/>'
-//   // + '</div>'
-//   // + '<div class="col">'
-//   // + '</br><h5 class="text-danger">' + transport[i].vehicleName + '</h5>'
-//   // + '</br>Year : <h5 class="text-danger" >' + transport[i].year + '</h5>'
-//   // + '</br><h5 class="text-danger" > ' + transport[i].rent + '</h5>'
-//   // + '</div>'
-//   // + '</div>';
+
   }
 };
 
@@ -828,7 +818,7 @@ $( function() {
 }
 
 
-//Home page Modal run by default.
+//Home page Modals by default.
 
 function modals1(){
 $('.modalClass1').on('click', function(){
@@ -837,8 +827,6 @@ $('.modalClass1').on('click', function(){
   //console.log(typeof(this.id));
 
   document.getElementById('modalContent').innerHTML = " ";
-
-
 
   for(var i = 0; i < transport.length; i++) {
   if (parseInt(this.id) === parseInt(transport[i].id)) {
@@ -897,71 +885,19 @@ document.getElementById('vehicles').addEventListener('click', function(){
       + '<li class="breadcrumb-item active" aria-current="page">Vehicles</li>'
       + '</ol>'
       + '</nav>'
-      + '<select class="custom-select myContainer w-50" id="drop">'
-      + '<option selected>Select Vehicle</option>'
-      + '<option class="motorBike" value="1" onClick="motorBike()">Motor-Bike</option>'
-      + '<option class="smallCar" value="2">Small-Car</option>'
-      + '<option class="largeCar" value="3">Large-Car</option>'
-      + '<option class="motorHome" value="3">Motor-Home</option>'
-      + '</select>'
-  for(var i = 0; i < transport.length; i++) {
-    document.getElementById('show').innerHTML
-      += '<br><div class="row ml-4 container jumbotron w-75 mx-auto bg-dark text-white col-12 col-sm-12 col-md-12 col-lg-12">'
-      +  '<div class="col">'
-      +  '<img src="' + transport[i].photo + ' " class="card-img-top myTransport w-75 mt-4" alt="Vehicles"/>'
-      + '</div>'
-      + '<div class="col">'
-      + '</br><h5 class="">' + transport[i].type + '</h5>'
-      + '</br><h5 class="">' + transport[i].vehicleName + '</h5>'
-      + '<h5 class="">Make: ' + transport[i].year + '</h5>'
-      + '<h5 class="">$' + transport[i].rent + ' per day</h5>'
-      + '<h5 class="">Transmission: ' + transport[i].transmission + ' per day</h5>'
-      + '<h5 class="">Fuel: ' + transport[i].fuel + ' per day</h5>'
-      + '<h5 class="">Mileage: ' + transport[i].mileage + ' per day</h5>'
-      + '<h5 class="">Engine Capacity: ' + transport[i].engineCC + ' per day</h5>'
-      + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
-      + '<br><br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
-      + '</div>'
-      + '</div>';
-        }
+      // + '<select class="custom-select myContainer w-50" id="drop">'
+      // + '<option selected>Select Vehicle</option>'
+      // + '<option class="motorBike" value="Motor-Bike" onClick="motorBike()">Motor-Bike</option>'
+      // + '<option class="smallCar" value="Small-Car">Small-Car</option>'
+      // + '<option class="largeCar" value="Large-Car">Large-Car</option>'
+      // + '<option class="motorHome" value="Motor-Home">Motor-Home</option>'
+      // + '</select>'
+        vehiclesForVehiclesMenu();
+
         modals1();
       });
 
-      var motorBike = transport.filter(function(bike){
-        return bike.type === "Motor-Bike";
-      });
 
-      function motorBike(){
-        console.log('Hey motorbike');
-          // if (motorBike) {
-          //   return bike1;
-          //   // console.log('hey');
-          //   document.getElementById('show').innerHTML = " ";
-          //   for(var i = 0; i < transport.length; i++) {
-          //   document.getElementById('show').innerHTML
-          //
-          //   += '<div class="vCard py-2 mt-3 mx-1 ml-5 myContainer clearfix col-sm-6 col-md-6 col-lg-4">'
-          //   +  '<img src="' + transport[i].photo + ' " class="card-img-top" alt="Vehicles"/>'
-          //   +  '<ul class="py-0 px-0 list-group list-group-flush">'
-          //   + '<li class="text-primary cardContent list-group-item">' + transport[i].vehicleName + '</li>'
-          //   + '<li class="text-primary cardContent list-group-item" >' + transport[i].type + '</li>'
-          //   + '<li class="text-primary cardContent list-group-item" > Rent: $ ' + transport[i].rent + ' per day </li>'
-          //   + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
-          //   + '<br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
-          //   +  '</ul>'
-          //   +  '</div>'
-          //     }
-          // }
-      };
-
-    // if (("'#drop' option selected").value == '1') {
-      //   $('.motorBike').on('click', function(){
-      //     console.log('motorbike');
-      //   if (this.value === 1){
-      //   console.log('motor bike');
-      //   motorBike();
-      //   }
-      // });
 
   // Trigger Search Button
     var days, people, originInput, destinationInput;
@@ -1045,4 +981,69 @@ document.getElementById('vehicles').addEventListener('click', function(){
       }
     }
     modals();
+});
+
+  $('#vehicleTypes, #submit').hide();
+document.getElementById('vehicles').addEventListener('click', function(){
+  $('#vehicleTypes, #submit').show();
+});
+
+function vehiclesForVehiclesMenu(){
+  for(var i = 0; i < transport.length; i++) {
+  document.getElementById('show').innerHTML
+  += '<br><div class="row ml-4 container jumbotron w-75 mx-auto bg-dark text-white col-12 col-sm-12 col-md-12 col-lg-12">'
+  +  '<div class="col">'
+  +  '<img src="' + transport[i].photo + ' " class="card-img-top myTransport w-75 mt-4" alt="Vehicles"/>'
+  + '</div>'
+  + '<div class="col">'
+  + '</br><h5 class="">' + transport[i].type + '</h5>'
+  + '</br><h5 class="">' + transport[i].vehicleName + '</h5>'
+  + '<h5 class="">Make: ' + transport[i].year + '</h5>'
+  + '<h5 class="">$' + transport[i].rent + ' per day</h5>'
+  + '<h5 class="">Transmission: ' + transport[i].transmission + ' per day</h5>'
+  + '<h5 class="">Fuel: ' + transport[i].fuel + ' per day</h5>'
+  + '<h5 class="">Mileage: ' + transport[i].mileage + ' per day</h5>'
+  + '<h5 class="">Engine Capacity: ' + transport[i].engineCC + ' per day</h5>'
+  + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
+  + '<br><br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
+  + '</div>'
+  + '</div>';
+  }
+}
+
+
+$('#submit').click(function(){
+  var vehicleType=document.getElementById('vehicleTypes').value;
+  console.log(vehicleType);
+  document.getElementById('show').innerHTML = " ";
+  document.getElementById('show').innerHTML
+  = '<nav aria-label="breadcrumb">'
+  +  '<ol class="breadcrumb bg-white">'
+  + '<li class="breadcrumb-item"><a href="index.html">Home</a></li>'
+  + '<li class="breadcrumb-item active" aria-current="page">Vehicles</li>'
+  + '</ol>'
+  + '</nav>'
+  for(var i = 0; i < transport.length; i++) {
+  if (transport[i].type === vehicleType){
+    document.getElementById('show').innerHTML
+    += '<br><div class="row ml-4 container jumbotron w-75 mx-auto bg-dark text-white col-12 col-sm-12 col-md-12 col-lg-12">'
+    +  '<div class="col">'
+    +  '<img src="' + transport[i].photo + ' " class="card-img-top myTransport w-75 mt-4" alt="Vehicles"/>'
+    + '</div>'
+    + '<div class="col">'
+    + '</br><h5 class="">' + transport[i].type + '</h5>'
+    + '</br><h5 class="">' + transport[i].vehicleName + '</h5>'
+    + '<h5 class="">Make: ' + transport[i].year + '</h5>'
+    + '<h5 class="">$' + transport[i].rent + ' per day</h5>'
+    + '<h5 class="">Transmission: ' + transport[i].transmission + ' per day</h5>'
+    + '<h5 class="">Fuel: ' + transport[i].fuel + ' per day</h5>'
+    + '<h5 class="">Mileage: ' + transport[i].mileage + ' per day</h5>'
+    + '<h5 class="">Engine Capacity: ' + transport[i].engineCC + ' per day</h5>'
+    + '<img src="' + transport[i].rating + ' " class="card-img-top smaller" alt="Vehicles"/>'
+    + '<br><br><button id= " ' + transport[i].id + ' " type="button" class="btn btn-primary modalClass modalClass1" data-toggle="modal" data-target=".bd-example-modal-lg">View More</button>'
+    + '</div>'
+    + '</div>';
+  }
+  }
+  modals1();
 });
